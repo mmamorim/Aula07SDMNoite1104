@@ -1,7 +1,7 @@
 
-const config = require("config")
-const express = require("express")
-const bodyParser = require ("body-parser")
+import config from "config"
+import express from "express"
+import bodyParser from "body-parser" 
 
 console.log("Abrindo super hiper servidor...");
 
@@ -12,12 +12,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
-const bandRoute = require("./routes/bandas-rock")
+import bandRoute from "./routes/bandas-rock.js"
 bandRoute(app,config)
 
-const produtosRoute = require("./routes/produtos")
-produtosRoute(app,config)
 
 app.listen(port, function() {
   console.log(`Servidor rodando na porta ${port}`)

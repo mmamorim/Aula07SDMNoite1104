@@ -1,22 +1,24 @@
+import controller from "../controllers/bandas-rock.js";
 
-module.exports = function (app,config) {
-  const controllerFactory = require("../controllers/bandas-rock");
-  const controller = controllerFactory();
+const nomeRota = 'bandas';
+
+export default function (app,config) {
 
   app
-    .route(config.get("server.path_root") + "bandas")
+    .route(config.get("server.path_root") + nomeRota)
     .get(controller.showList);
 
   app
-    .route(config.get("server.path_root") + "bandas")
+    .route(config.get("server.path_root") + nomeRota)
     .post(controller.add);
 
   app
-    .route(config.get("server.path_root") + "bandas")
-    .patch(controller.update);
+    .route(config.get("server.path_root") + nomeRota)
+    .put(controller.update);
 
   app
-    .route(config.get("server.path_root") + "bandas")
+    .route(config.get("server.path_root") + nomeRota)
     .delete(controller.remove);
 
+  console.log(`Rota [${nomeRota}] carregada...`);
 };

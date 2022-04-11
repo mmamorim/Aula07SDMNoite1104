@@ -1,4 +1,4 @@
-{
+const data = {
   "bandasrock": {
     "data": {
       "BAN-01": {
@@ -22,3 +22,5 @@
     }
   }
 }
+
+export default data;

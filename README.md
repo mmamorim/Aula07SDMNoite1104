@@ -1,4 +1,4 @@
-### Aula05 - SDM - Segunda - Noite - 04/04
+### Aula07 - SDM - Segunda - Noite - 11/04
 
 # Criando uma API RESTful com NodeJS e Express
 
@@ -52,7 +52,7 @@
     ~~~javascript 
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server.js"
+        "dev": "nodemon server.js"
     },
     ~~~
 
