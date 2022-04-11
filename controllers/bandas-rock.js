@@ -3,6 +3,7 @@ import { Low, JSONFile } from 'lowdb'
 
 const adapter = new JSONFile("./banco.json")
 const db = new Low(adapter)
+
 db.read().then(function () {
     console.log("banco carregado");
 }).catch(function (e) {
