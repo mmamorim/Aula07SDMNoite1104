@@ -1,4 +1,14 @@
 {
+  "filmes": {
+    "filme01": {
+      "id": "filme01",
+      "name": "Vento levou"
+    },
+    "filme02": {
+      "id": "filme02",
+      "name": "sdsdsdsd levou"
+    }
+  },
   "bandasrock": {
     "BAN-01": {
       "id": "BAN-01",

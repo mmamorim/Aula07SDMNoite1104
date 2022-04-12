@@ -14,6 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 
 import bandRoute from "./routes/bandas-rock.js"
 bandRoute(app,config)
+import filmesRoute from "./routes/filmes.js"
+filmesRoute(app,config)
 
 
 app.listen(port, function() {
